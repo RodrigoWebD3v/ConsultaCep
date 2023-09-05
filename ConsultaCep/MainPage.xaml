@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsultaCep.MainPage">
+
+
+
+    <ContentPage.Content>
+        <StackLayout Margin="20" Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Consulta de CEP" FontSize="24" TextColor="Black" HorizontalOptions="Center" />
+
+            <!-- Campo de entrada de CEP -->
+            <Entry x:Name="cepEntry" Placeholder="Digite o CEP" PlaceholderColor="Black" TextColor="Black" />
+
+            <!-- Botão de pesquisa -->
+            <Button Text="Pesquisar" BackgroundColor="White" TextColor="#178735" Clicked="OnCounterClicked" />
+
+            <!-- Labels para exibir as informações do CEP -->
+            <Label x:Name="logradouroLabel" Text="" TextColor="Black" />
+            <Label x:Name="bairroLabel" Text="" TextColor="Black" />
+            <Label x:Name="cidadeLabel" Text="" TextColor="Black" />
+            <Label x:Name="estadoLabel" Text="" TextColor="Black" />
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
